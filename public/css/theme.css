@@ -37,7 +37,7 @@
 }
 @-webkit-keyframes dance {
   from {
-    left: 800px;
+    left: 400px;
   }
 }
 @-moz-keyframes dance {
@@ -46,9 +46,11 @@
   }
 }
 
-.robot {
+.dancing {
   animation: dance 4s infinite;
-  transform: rotate(-20deg)
+  -webkit-animation: dance 4s infinite;
+  -moz-animation: dance 4s infinite;
+  /*transform: rotate(-20deg) */
 }
 
 .laser {
