@@ -15,6 +15,19 @@ $('.color').click(function() {
   //Display the three values in an alert window
   //alert(randomRGBA);
 });
+
+//When dance button it clicked, toggle dancing class on robot
 $('.moves').click(function() {
   $('.robot').toggleClass('dancing');
+});
+
+//function to create random dialogue
+$('.robot').click(function() {
+  //create choice of comments
+  var caption = ['Why are you hitting me?', 'What did I do?', 'Stop that!', 'Oi!!!', 'I am going to get angry'];
+  //generate random array index
+  var captionChoice = Math.floor(Math.random() * 5);
+  //get comment and display
+  $('.talk').html(caption[captionChoice];
+
 });
