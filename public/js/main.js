@@ -18,7 +18,7 @@ $('.color').click(function() {
 
 //When dance button it clicked, toggle dancing class on robot
 $('.moves').click(function() {
-  $('.robot').toggleClass('dancing');
+  $('.allmoves').toggleClass('dancing');
 });
 
 //function to create random dialogue
